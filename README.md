@@ -1,4 +1,8 @@
 # playmakers-assignment
+Application developed as a task for the recruitment process
+
+# View App Live
+Access the app on [Heroku](https://fsouza-playmakers-assignment-c9f1ab9b3ace.herokuapp.com/).
 
 # Downloads
 Download and install [Docker](https://docs.docker.com/get-docker).
