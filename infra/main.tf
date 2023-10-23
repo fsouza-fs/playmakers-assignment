@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "fsouza"
+
+    workspaces {
+      name = "playmakers-assignment"
+    }
+  }
   required_providers {
     heroku = {
       source  = "heroku/heroku"
@@ -10,7 +17,7 @@ terraform {
 variable "app_name" {
   description = "Name of the Heroku app"
   type = string
-  default = "felipe_souza_playmakers_assignment"
+  default = "fsouza-playmakers-assignment"
 }
 
 resource "heroku_app" "playmakers_assignment" {
@@ -33,7 +40,7 @@ resource "heroku_formation" "example" {
   app_id     = heroku_app.playmakers_assignment.id
   type       = "web"
   quantity   = 1
-  size       = "Free"
+  size       = "Basic"
   depends_on = [heroku_build.playmakers_build]
 }
 

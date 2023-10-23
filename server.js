@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 const upload = multer({ dest: 'upload/' });
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 function isImageWithinCircle(image) {
     let isImageWithinCircle = true;
