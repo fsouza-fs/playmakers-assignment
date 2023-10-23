@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <!-- Dropzone CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+
+  <!-- Cropper CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+  <title>Playmakers Assignment</title>
+</head>
+<body>
+  <div id="cropModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Crop Image</h2>
+        </div>
+        <img id="imageToCrop" src="">
+        <div id="buttonContainer">
+            <button id="cancelButton">Cancel</button>
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="avatar-content">
+    <div id="avatar-container" class="avatar-container">
+      <img id="avatar" src="images/default-avatar.png" alt="User Avatar">
+    </div>
+    <div class="upload-description">
+      <button id="updateButton">Update Avatar</button>
+      <p style="margin-left: 5px;">The image must be either JPEG or PNG and should be at least 512x512</p>
+    </div>
+  </div>
+
+  <div id="uploadModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Upload Avatar</h2>
+        </div>
+        <div id="dropzoneContainer" class="dropzone"></div>
+        <div id="buttonContainer">
+          <button id="cancelUploadButton">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

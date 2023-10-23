@@ -1,0 +1,147 @@
+html {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F8;
+}
+
+p {
+    font-family: poppins, sans-serif;
+}
+
+#cropModal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(121, 122, 124, 0.493); /* Transparent background */
+    display: none;  /* Hide by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.cropper-container {
+    width: auto !important;
+}
+
+#uploadModal {
+    position: fixed;
+    z-index: 1000; /* Stay on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(121, 122, 124, 0.493); /* Transparent background */
+    display: none; /* Hide by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px;
+    width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    border-radius: 0.4rem !important;
+}
+
+.dropzone {
+    border-radius: 0.4rem;
+    border: none !important;
+    background: #EFEFEF !important;
+}
+
+.upload-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem !important;
+    align-items: flex-start;
+}
+
+#imageToCrop {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.avatar-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;   
+    border: 15px solid;
+    border-color: #869995;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    margin-top: 20px;
+    margin-right: 2rem;
+    display: block;
+}
+
+.avatar-content {
+    border: 2px solid #ffffff;
+    border-radius: 0.4rem !important;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem !important;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cancelButton, #saveButton, #updateButton, #cancelUploadButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.4rem !important;
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    max-height: 2rem;
+}
+
+#saveButton {
+    background-color: purple;
+    color: white;
+}
+
+#cancelButton, #cancelUploadButton {
+    background-color: #EFEFEF;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 5px 0px;
+}
