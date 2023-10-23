@@ -30,8 +30,8 @@ resource "heroku_build" "playmakers_build" {
   buildpacks = ["https://github.com/heroku/heroku-buildpack-nodejs.git"]
 
   source {
-    url     = "https://github.com/fsouza-fs/playmakers-assignment/archive/v1.0.1.tar.gz"
-    version = "1.0.1"
+    url     = "https://github.com/fsouza-fs/playmakers-assignment/archive/v1.2.0.tar.gz"
+    version = "1.2.0"
   }
 }
 
