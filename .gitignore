@@ -35,8 +35,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Local .terraform directories
+# Local .terraform directories and files
 **/.terraform/*
+**/.terraform*
 
 # .tfstate files
 *.tfstate

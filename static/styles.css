@@ -52,7 +52,7 @@ p {
 .modal-content {
     position: relative;
     padding: 20px;
-    width: 40%;
+    width: 60%;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     max-height: 80vh;
@@ -61,6 +61,18 @@ p {
     font-family: poppins, sans-serif;
     font-weight: 500;
     border-radius: 0.4rem !important;
+
+    @media only screen and (max-width: 860px) {
+        width: 80%;
+    }
+}
+
+#upload-modal-content {
+    width: 40%;
+
+    @media only screen and (max-width: 860px) {
+        width: 80%;
+    }
 }
 
 .dropzone {
@@ -75,6 +87,10 @@ p {
     flex-direction: column;
     padding: 1rem !important;
     align-items: flex-start;
+
+    @media only screen and (max-width: 860px) {
+        align-items: center;
+    }
 }
 
 #imageToCrop {
@@ -96,6 +112,10 @@ p {
     margin-top: 20px;
     margin-right: 2rem;
     display: block;
+
+    @media only screen and (max-width: 860px) {
+        margin-right: 0px;
+    }
 }
 
 .avatar-content {
@@ -108,6 +128,10 @@ p {
     align-items: center;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    @media only screen and (max-width: 860px) {
+        flex-direction: column;
+    }
 }
 
 #avatar {
